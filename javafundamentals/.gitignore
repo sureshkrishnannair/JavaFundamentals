@@ -2,4 +2,5 @@
 .project
 .settings/
 javafundamentals/.settings
+test-output
 target/

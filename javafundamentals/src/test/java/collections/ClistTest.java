@@ -139,7 +139,7 @@ public class ClistTest {
 	 * @author suresh
 	 * @version 1.0
 	 */
-	@Test(priority=5,enabled=true)
+	@Test(priority=5,enabled=false)
 	public void convertArraytoArrayList() {
 		
 		String[]  ar= {"suresh","Rajesh","Krishnan","Indira"};
@@ -159,5 +159,16 @@ public class ClistTest {
 /*************************************************************************************************************************************/	
 	
 /*************************************************************************************************************************************/
+	
+	@Test(priority=6,enabled=true)
+	public void test() {
+		
+		List<String> arraylist1=new ArrayList<String>();
+		arraylist1.add("London");
+		arraylist1.add("NewYork");
+		arraylist1.add("Toronto");
+		arraylist1.stream().filter(x->x.contains("London")).findFirst();
+		
+	}
 
 }
